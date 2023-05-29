@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./js/bootstrap.min.js.map"></script>
+    <script defer src="./js/bootstrap.js"></script>
     <script defer src="./js/popper.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
     <link
@@ -13,5 +13,160 @@
     />
     <title>Desert Shop</title>
   </head>
-  <body></body>
+  <body class="d-flex flex-column justify-content-between align-items-center">
+    <header class="navbar">
+      <div class="header-wrap container-fluid">
+        <!--為什麼這裡要多包這個 div？.container 不能給 header 嗎？ -->
+
+        <!-- 手機版 NAV 開關 -->
+        <div class="header-nav-list-switch d-lg-none">
+          <button
+            class="navbar-toggler border-0 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons"> menu </span>
+          </button>
+        </div>
+
+        <!-- LOGO -->
+        <a
+          class="header-logo navbar-brank d-inline-flex align-items-center"
+          href="#"
+        >
+          <img
+            class="header-logo-icon d-none d-lg-inline-block"
+            src="./image/logo-dark.svg"
+            alt="logo-dark"
+          />
+          <img
+            class="header-logo-logotype"
+            src="./image/logotype-lg-dark.svg"
+            alt="logotype-lg-dark"
+          />
+          <h1></h1>
+        </a>
+
+        <!-- NAV LIST ＆ CART -->
+        <nav class="d-flex">
+          <!-- NAV LIST Desktop -->
+          <ul class="header-nav-list nav me-lg-5 d-none d-lg-flex">
+            <li class="nav-item">
+              <a href="#" class="header-nav-home align-middle">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="header-nav-product align-middle">甜點</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="header-nav-login align-middle">登入</a>
+            </li>
+          </ul>
+
+          <!-- CART ICON -->
+          <div class="cart">
+            <a href="#">
+              <span class="material-icons align-middle"> shopping_cart </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!-- 手機版 NAV -->
+      <div
+        class="header-nav-list-mobile collapse w-100"
+        id="navbarToggleExternalContent"
+      >
+        <ul class="header-nav-list-mobile nav me-lg-5 flex-column w-100">
+          <li class="nav-item">
+            <a href="#" class="header-nav-home align-middle">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="header-nav-product align-middle">甜點</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="header-nav-login align-middle">登入</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main></main>
+    <footer class="w-100">
+      <div class="footer-wrap">
+        <div class="footer-subscribe-edm container-fluid">
+          <form
+            class="footer-edm-form row d-flex flex-column flex-lg-row align-items-lg-center"
+          >
+            <div
+              class="footer-edm-label d-flex justify-content-center justify-content-lg-start col-12 col-lg-6 mb-lg-0"
+            >
+              <img
+                class="img-fluid"
+                src="./image/logo-light.svg"
+                alt="logo-light"
+              />
+              <label for="subscribeEdm" class="">訂閱你我的甜蜜郵件</label>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-row position-relative">
+              <span
+                class="footer-edm-input-icon material-icons position-absolute"
+              >
+                email
+              </span>
+              <input
+                type="email"
+                class="footer-edm-input border-0 rounded-0 flex-grow-1 d-flex"
+                id="subscribeEdm"
+              />
+              <button
+                type="submit"
+                class="footer-edm-btn btn border-0 rounded-0"
+              >
+                <span class="material-icons"> arrow_forward </span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="footer-info container d-flex flex-column flex-lg-row justify-content-lg-between"
+        >
+          <div
+            class="footer-info-connect d-flex flex-column justify-content-between"
+          >
+            <div class="footer-info-connect-logo">
+              <img
+                class="img-fluid"
+                src="./image/logotype-lg-dark.svg"
+                alt="logotype-lg-dark"
+              />
+            </div>
+            <section
+              class="footer-info-connect-content flex-grow-lg-1 d-flex align-items-lg-end"
+            >
+              07-1234-5678<br />
+              sweetaste@email.com<br />
+              800 高雄市新興區幸福路 520 號<br />
+            </section>
+            <div class="footer-info-connect-media">
+              <img class="me-2" src="./image/ic-line@.svg" alt="ic-line@" />
+              <img src="./image/ic-facebook.svg" alt="ic-facebook" />
+            </div>
+          </div>
+          <div class="footer-info-slogen d-flex flex-column align-items-lg-end">
+            <img
+              class="d-none d-lg-flex"
+              src="./image/word-good-time-to-eat.svg"
+              alt="word-good-time-to-eat"
+            />
+            <p class="footer-info-slogen-copyright mb-0 mt-4 mt-lg-5">
+              © 2018 Sweetaste* All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

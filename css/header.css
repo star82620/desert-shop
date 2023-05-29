@@ -1,1 +1,130 @@
-/*# sourceMappingURL=header.css.map */
+a {
+  text-decoration: none;
+}
+
+.header-wrap {
+  min-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  height: 84px;
+  margin-bottom: 100px;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .header-wrap {
+    min-width: 940px;
+  }
+}
+@media (min-width: 992px) {
+  .header-wrap {
+    height: 100px;
+  }
+}
+.header-wrap .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media (min-width: 992px) {
+  .header-wrap .header-logo img.header-logo-icon {
+    height: 40px;
+    margin-right: 8px;
+  }
+}
+.header-wrap .header-logo img.header-logo-logotype {
+  height: 18px;
+}
+@media (min-width: 992px) {
+  .header-wrap .header-logo img.header-logo-logotype {
+    height: 27px;
+  }
+}
+.header-wrap .header-logo h1 {
+  width: 0;
+  height: 0;
+}
+.header-wrap .header-nav-list {
+  gap: 60px;
+}
+
+footer {
+  background-color: var(--bs-tertiary-bg);
+}
+footer .footer-subscribe-edm {
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-secondary-color);
+  padding: 30px 0;
+}
+footer .footer-subscribe-edm .footer-edm-form {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe-edm .footer-edm-form {
+    max-width: 871px;
+  }
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-label {
+  margin-bottom: 30px;
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-label img {
+  height: 40px;
+  margin-right: 20px;
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-input {
+  padding-left: 64px;
+  outline: none;
+  height: 56px;
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-input-icon {
+  color: var(--bs-body-color);
+  margin-right: -20px;
+  z-index: 1;
+  bottom: 50%;
+  left: 20px;
+  transform: translate(0, 50%);
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-btn {
+  background: var(--bs-emphasis-color);
+  padding: 0 24px;
+  outline: none;
+  height: 56px;
+}
+footer .footer-subscribe-edm .footer-edm-form .footer-edm-btn span {
+  font-size: 16px;
+}
+footer .footer-info {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+}
+@media (min-width: 992px) {
+  footer .footer-info {
+    max-width: 871px;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer-info {
+    padding-top: 30px;
+  }
+}
+footer .footer-info .footer-info-connect-logo {
+  width: 171px;
+  margin-bottom: 40px;
+}
+footer .footer-info .footer-info-connect-content {
+  margin-bottom: 37px;
+}
+@media (min-width: 992px) {
+  footer .footer-info .footer-info-connect-content {
+    margin-bottom: 30px;
+  }
+}
+footer .footer-info .footer-info-connect-media img {
+  width: 32px;
+  height: 32px;
+}
+footer .footer-info .footer-info-slogen img {
+  width: 60px;
+}/*# sourceMappingURL=header.css.map */
