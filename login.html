@@ -91,7 +91,89 @@
       </div>
     </header>
     <!-- 頁面內容 -->
-    <main></main>
+    <main>
+      <section class="login container-fluid px-0 border">
+        <div class="row">
+          <h2 class="login-title col-12 mb-0 text-center">會員登入</h2>
+          <div class="login-connect-social col-12 container">
+            <div class="row">
+              <div class="col-4">
+                <button class="login-connect-fb w-100">
+                  <img
+                    class="img-fluid"
+                    src="./image/ic-facebook-logotype.svg"
+                  />
+                </button>
+              </div>
+              <div class="col-4 border-start border-end">
+                <button class="login-connect-google w-100">
+                  <img
+                    class="img-fluid"
+                    src="./image/ic-google-logotype.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="col-4">
+                <button class="login-connect-yahoo w-100">
+                  <img
+                    class="img-fluid"
+                    src="./image/ic-yahoo-logotype.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <form action="">
+            <div class="col-12 container px-0">
+              <div class="login-form row g-3 mx-0 mt-0">
+                <div class="login-input-text col-12 p-0 position-relative">
+                  <input
+                    type="text"
+                    class="form-control rounded-0 py-3"
+                    placeholder="電子信箱/手機號碼"
+                    aria-label="user-id"
+                    id="login-user-id"
+                  />
+                  <label for="login-user-id" class="position-absolute top-50">
+                    <span class="material-icons"> person </span>
+                  </label>
+                </div>
+                <div class="login-input-text col-12 p-0 position-relative">
+                  <input
+                    type="text"
+                    class="form-control rounded-0 py-3"
+                    placeholder="請輸入使用者密碼"
+                    aria-label="password"
+                    id="login-password"
+                  />
+                  <label for="login-password" class="position-absolute top-50">
+                    <span class="material-icons"> vpn_key </span>
+                  </label>
+                </div>
+                <div class="col-12 p-0 fw-semibold">
+                  <input
+                    type="checkbox"
+                    name="remember-me"
+                    id="login-remember"
+                  />
+                  <label for="login-remember">記住我</label>
+                </div>
+              </div>
+              <div class="row">
+                <button
+                  class="login-submit-btn col-12 py-3 btn btn-primary rounded-0 fw-semibold"
+                  type="submit"
+                >
+                  登入帳號
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="w-100">
       <div class="footer-subscribe-edm">
         <form

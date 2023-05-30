@@ -61,3 +61,60 @@
     }
   }
 }
+
+.login {
+  @include w-375-871();
+  .login-title {
+    padding: 30px 0;
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-secondary-color);
+    font-size: 36px;
+  }
+
+  .login-connect-social {
+    padding: 30px;
+    background-color: var(--bs-tertiary-bg);
+
+    button {
+      height: 56px;
+      background-color: var(--bs-body-bg);
+      border-color: var(--bs-secondary-color);
+
+      img {
+        height: 16px;
+      }
+    }
+
+    .login-connect-google img {
+      height: 24px;
+      margin-bottom: -4px;
+    }
+  }
+
+  .login-form {
+    padding: 30px;
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-secondary-color);
+
+    .login-input-text {
+      input {
+        padding-left: 64px;
+        background-color: var(--bs-tertiary-bg);
+      }
+
+      input::placeholder {
+        color: var(--bs-tertiary-color);
+      }
+
+      label {
+        transform: translateY(-50%);
+        color: var(--bs-body-color);
+        left: 20px;
+
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

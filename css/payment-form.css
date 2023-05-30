@@ -72,7 +72,7 @@ footer .footer-subscribe-edm .footer-edm-form {
 }
 @media (min-width: 992px) {
   footer .footer-subscribe-edm .footer-edm-form {
-    max-width: 871px;
+    max-width: 780px;
   }
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-label {
@@ -83,9 +83,17 @@ footer .footer-subscribe-edm .footer-edm-form .footer-edm-label img {
   margin-right: 20px;
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-input {
+  background-color: var(--bs-secondary-color);
   padding-left: 64px;
+  margin-right: -64px;
   outline: none;
   height: 56px;
+  display: none;
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe-edm .footer-edm-form .footer-edm-input {
+    width: 380px;
+  }
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-input-icon {
   color: var(--bs-body-color);
@@ -97,9 +105,9 @@ footer .footer-subscribe-edm .footer-edm-form .footer-edm-input-icon {
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-btn {
   background: var(--bs-emphasis-color);
-  padding: 0 24px;
   outline: none;
   height: 56px;
+  width: 64px;
 }
 footer .footer-info {
   max-width: 315px;
@@ -109,7 +117,7 @@ footer .footer-info {
 }
 @media (min-width: 992px) {
   footer .footer-info {
-    max-width: 871px;
+    max-width: 780px;
   }
 }
 @media (min-width: 992px) {
@@ -135,10 +143,6 @@ footer .footer-info .footer-info-connect-media img {
 }
 footer .footer-info .footer-info-slogen img {
   width: 60px;
-}
-
-main {
-  flex-flow: 1;
 }
 
 .payment-success {
@@ -204,4 +208,60 @@ main {
   .payment-success .payment-success-keep-btn button {
     width: 300px;
   }
+}
+
+.login {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .login {
+    max-width: 780px;
+  }
+}
+.login .login-title {
+  padding: 30px 0;
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-secondary-color);
+  font-size: 36px;
+}
+.login .login-connect-social {
+  padding: 30px;
+  background-color: var(--bs-tertiary-bg);
+}
+.login .login-connect-social button {
+  height: 56px;
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-secondary-color);
+}
+.login .login-connect-social button img {
+  height: 16px;
+}
+.login .login-connect-social .login-connect-google img {
+  height: 24px;
+  margin-bottom: -4px;
+}
+.login .login-form {
+  padding: 30px;
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-secondary-color);
+}
+.login .login-form .login-input-text input {
+  padding-left: 64px;
+  background-color: var(--bs-tertiary-bg);
+}
+.login .login-form .login-input-text input::-moz-placeholder {
+  color: var(--bs-tertiary-color);
+}
+.login .login-form .login-input-text input::placeholder {
+  color: var(--bs-tertiary-color);
+}
+.login .login-form .login-input-text label {
+  transform: translateY(-50%);
+  color: var(--bs-body-color);
+  left: 20px;
+}
+.login .login-form .login-input-text label span {
+  vertical-align: middle;
 }/*# sourceMappingURL=payment-form.css.map */
