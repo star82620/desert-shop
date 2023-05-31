@@ -64,16 +64,41 @@
 
 .login {
   @include w-375-871();
+
+  .login-row {
+    @include media-breakpoint-up-lg() {
+      max-height: 380px;
+      height: 100%;
+      margin-top: 24px;
+      margin-bottom: 60px;
+    }
+  }
+
   .login-title {
     padding: 30px 0;
     background-color: var(--bs-secondary-bg);
     color: var(--bs-secondary-color);
     font-size: 36px;
+
+    @include media-breakpoint-up-lg() {
+      padding: 40px 0;
+    }
   }
 
   .login-connect-social {
     padding: 30px;
     background-color: var(--bs-tertiary-bg);
+
+    @include media-breakpoint-up-lg() {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      transform: translate(0, 15px);
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 36px;
+    }
 
     button {
       height: 56px;
@@ -85,19 +110,38 @@
       }
     }
 
-    .login-connect-google img {
-      height: 24px;
-      margin-bottom: -4px;
+    .login-connect-google {
+      border-width: 0 1px 0 1px;
+      border-style: solid;
+      border-color: var(--bs-secondary-color);
+
+      img {
+        height: 24px;
+        margin-bottom: -4px;
+      }
+
+      @include media-breakpoint-up-lg() {
+        border-left: none;
+        border-right: none;
+      }
     }
   }
 
   .login-form {
-    padding: 30px;
+    padding: 14px 30px 30px;
     background-color: var(--bs-secondary-bg);
     color: var(--bs-secondary-color);
+    margin-top: 0;
+
+    @include media-breakpoint-up-lg() {
+      padding: 0 30px 20px;
+      margin-top: -16px;
+    }
 
     .login-input-text {
       input {
+        padding-top: 18px;
+        padding-bottom: 16px;
         padding-left: 64px;
         background-color: var(--bs-tertiary-bg);
       }
@@ -115,6 +159,55 @@
           vertical-align: middle;
         }
       }
+    }
+  }
+}
+
+.products {
+  @include w-375-940();
+
+  .products-list {
+    gap: 30px;
+
+    .products-list-nav {
+      font-size: 24px;
+      text-align: center;
+      li:hover {
+        // color: red;
+      }
+    }
+  }
+
+  .products-list-card-group {
+    gap: 30px;
+
+    @include media-breakpoint-up-lg() {
+      gap: 20px;
+    }
+    .product-card {
+      border-color: var(--bs-secondary-color);
+
+      .product-card-title,
+      .product-card-price {
+        padding: 14px 0;
+        text-align: center;
+        font-size: 20px;
+        border-color: var(--bs-secondary-color);
+      }
+
+      .product-card-btn {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .products-list-page-bar {
+    a {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
