@@ -1,7 +1,9 @@
+@import url(./setting.css);
+
 $primary-dark: #3f5d45;
 $primary-middle: #8da291;
 $primary-light: #eaf0ed;
-$hight-light: #ffe180;
+$hight-ligh: #ffe180;
 
 // $grid-breakpoints: (
 //   xs: 0,
@@ -63,6 +65,10 @@ $hight-light: #ffe180;
 
 a {
   text-decoration: none;
+  color: var(--primary-dark);
+
+  &:hover {
+  }
 }
 
 button {
@@ -110,17 +116,18 @@ header {
 
     .header-nav-list {
       gap: 60px;
+      font-weight: 600;
     }
   }
 }
 
 //footer
 footer {
-  background-color: var(--bs-tertiary-bg);
+  background-color: var(--primary-light);
 
   .footer-subscribe-edm {
-    background-color: var(--bs-secondary-bg);
-    color: var(--bs-secondary-color);
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
     padding: 30px 0;
 
     .footer-edm-form {
@@ -137,7 +144,7 @@ footer {
       }
 
       .footer-edm-input {
-        background-color: var(--bs-secondary-color);
+        background-color: var(--primary-light);
         padding-left: 64px;
         margin-right: -64px;
         outline: none;
@@ -150,7 +157,7 @@ footer {
       }
 
       .footer-edm-input-icon {
-        color: var(--bs-body-color);
+        color: var(--primary-dark);
         margin-right: -20px;
         z-index: 1;
         bottom: 50%;
@@ -159,7 +166,6 @@ footer {
       }
 
       .footer-edm-btn {
-        background: var(--bs-emphasis-color);
         outline: none;
         height: 56px;
         width: 64px;

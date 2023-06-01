@@ -1,7 +1,8 @@
+@import url(./setting.css);
 a {
   text-decoration: none;
+  color: var(--primary-dark);
 }
-
 button {
   outline: none;
   border: none;
@@ -50,14 +51,15 @@ header .header-wrap .header-logo h1 {
 }
 header .header-wrap .header-nav-list {
   gap: 60px;
+  font-weight: 600;
 }
 
 footer {
-  background-color: var(--bs-tertiary-bg);
+  background-color: var(--primary-light);
 }
 footer .footer-subscribe-edm {
-  background-color: var(--bs-secondary-bg);
-  color: var(--bs-secondary-color);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   padding: 30px 0;
 }
 footer .footer-subscribe-edm .footer-edm-form {
@@ -79,7 +81,7 @@ footer .footer-subscribe-edm .footer-edm-form .footer-edm-label img {
   margin-right: 20px;
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-input {
-  background-color: var(--bs-secondary-color);
+  background-color: var(--primary-light);
   padding-left: 64px;
   margin-right: -64px;
   outline: none;
@@ -92,7 +94,7 @@ footer .footer-subscribe-edm .footer-edm-form .footer-edm-input {
   }
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-input-icon {
-  color: var(--bs-body-color);
+  color: var(--primary-dark);
   margin-right: -20px;
   z-index: 1;
   bottom: 50%;
@@ -100,7 +102,6 @@ footer .footer-subscribe-edm .footer-edm-form .footer-edm-input-icon {
   transform: translate(0, 50%);
 }
 footer .footer-subscribe-edm .footer-edm-form .footer-edm-btn {
-  background: var(--bs-emphasis-color);
   outline: none;
   height: 56px;
   width: 64px;
@@ -176,7 +177,7 @@ footer .footer-info .footer-info-slogen img {
   height: 0;
   margin-top: 10px;
   margin-bottom: 42px;
-  border-bottom: 1px solid var(--bs-body-color);
+  border-bottom: 1px solid var(--primary-dark);
 }
 .payment-success .payment-success-check-icon span {
   vertical-align: middle;
@@ -196,9 +197,9 @@ footer .footer-info .footer-info-slogen img {
   width: 100%;
   height: 65px;
   padding: 16px 0;
-  background-color: var(--bs-emphasis-color);
+  background-color: var(--high-light);
   font-size: 24px;
-  color: var(--bs-body-color);
+  color: var(--primary-dark);
 }
 @media (min-width: 992px) {
   .payment-success .payment-success-keep-btn button {
@@ -226,8 +227,8 @@ footer .footer-info .footer-info-slogen img {
 }
 .login .login-title {
   padding: 30px 0;
-  background-color: var(--bs-secondary-bg);
-  color: var(--bs-secondary-color);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   font-size: 36px;
 }
 @media (min-width: 992px) {
@@ -237,7 +238,7 @@ footer .footer-info .footer-info-slogen img {
 }
 .login .login-connect-social {
   padding: 30px;
-  background-color: var(--bs-tertiary-bg);
+  background-color: var(--primary-light);
 }
 @media (min-width: 992px) {
   .login .login-connect-social {
@@ -252,8 +253,7 @@ footer .footer-info .footer-info-slogen img {
 }
 .login .login-connect-social button {
   height: 56px;
-  background-color: var(--bs-body-bg);
-  border-color: var(--bs-secondary-color);
+  background-color: #fff;
 }
 .login .login-connect-social button img {
   height: 16px;
@@ -261,7 +261,7 @@ footer .footer-info .footer-info-slogen img {
 .login .login-connect-social .login-connect-google {
   border-width: 0 1px 0 1px;
   border-style: solid;
-  border-color: var(--bs-secondary-color);
+  border-color: var(--primary-light);
 }
 .login .login-connect-social .login-connect-google img {
   height: 24px;
@@ -275,8 +275,8 @@ footer .footer-info .footer-info-slogen img {
 }
 .login .login-form {
   padding: 14px 30px 30px;
-  background-color: var(--bs-secondary-bg);
-  color: var(--bs-secondary-color);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   margin-top: 0;
 }
 @media (min-width: 992px) {
@@ -289,17 +289,17 @@ footer .footer-info .footer-info-slogen img {
   padding-top: 18px;
   padding-bottom: 16px;
   padding-left: 64px;
-  background-color: var(--bs-tertiary-bg);
+  background-color: var(--primary-light);
 }
 .login .login-form .login-input-text input::-moz-placeholder {
-  color: var(--bs-tertiary-color);
+  color: var(--primary-middle);
 }
 .login .login-form .login-input-text input::placeholder {
-  color: var(--bs-tertiary-color);
+  color: var(--primary-middle);
 }
 .login .login-form .login-input-text label {
   transform: translateY(-50%);
-  color: var(--bs-body-color);
+  color: var(--primary-dark);
   left: 20px;
 }
 .login .login-form .login-input-text label span {
@@ -314,6 +314,11 @@ footer .footer-info .footer-info-slogen img {
 @media (min-width: 992px) {
   .products {
     max-width: 940px;
+  }
+}
+@media (min-width: 992px) {
+  .products {
+    width: 940px;
   }
 }
 .products .products-banner {
@@ -331,19 +336,30 @@ footer .footer-info .footer-info-slogen img {
   height: 219px;
   background: url("../image/word-no-reason-sm-column.svg") no-repeat center top/auto 100%;
 }
-.products .products-list {
-  gap: 30px;
+@media (min-width: 992px) {
+  .products .products-list {
+    margin-top: 60px;
+  }
 }
 .products .products-list .products-list-nav {
   font-size: 24px;
   text-align: center;
 }
-.products .products-list-card-group {
-  gap: 30px;
+.products .products-list-card-group > div {
+  margin-top: 30px;
 }
 @media (min-width: 992px) {
-  .products .products-list-card-group {
-    gap: 20px;
+  .products .products-list-card-group > div {
+    margin-top: 0;
+  }
+}
+.products .products-list-page-bar {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .products .products-list-page-bar {
+    margin-bottom: 60px;
   }
 }
 .products .products-list-page-bar a {
@@ -353,10 +369,15 @@ footer .footer-info .footer-info-slogen img {
   justify-content: center;
   align-items: center;
 }
+.products .products-list-page-bar nav > ul > li > a:active {
+  font-weight: 600;
+}
+.products .products-list-page-bar nav > ul > li > a:focus {
+  box-shadow: none;
+}
 
 .product-card {
   width: 315px;
-  border-color: var(--bs-secondary-color);
 }
 @media (min-width: 992px) {
   .product-card {
@@ -365,8 +386,8 @@ footer .footer-info .footer-info-slogen img {
 }
 .product-card .product-card-today {
   padding: 13px 7px;
-  background-color: var(--bs-secondary-bg);
-  color: var(--bs-secondary-color);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   writing-mode: vertical-lr;
   top: 0;
   left: 20px;
@@ -387,7 +408,7 @@ footer .footer-info .footer-info-slogen img {
   padding: 14px 0;
   text-align: center;
   font-size: 20px;
-  border-color: var(--bs-secondary-color);
+  border-color: var(--primary-light);
 }
 .product-card .product-card-btn {
   font-size: 24px;
