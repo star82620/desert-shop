@@ -166,6 +166,24 @@
 .products {
   @include w-375-940();
 
+  .products-banner {
+    height: 277px;
+    padding: 30px;
+    background: url("../image/photo-banner-2.avif") no-repeat right center /
+      cover;
+
+    @include media-breakpoint-up-lg() {
+      height: 496px;
+    }
+
+    .products-banner-word {
+      width: 60px;
+      height: 219px;
+      background: url("../image/word-no-reason-sm-column.svg") no-repeat center
+        top / auto 100%;
+    }
+  }
+
   .products-list {
     gap: 30px;
 
