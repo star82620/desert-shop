@@ -101,31 +101,79 @@
       </div>
     </header>
     <!-- 頁面內容 -->
-    <main class="w-100">
-      <section
-        class="payment-success d-flex flex-column justify-content-center align-items-center"
-      >
-        <div
-          class="payment-success-title text-center flex-shrink-1 flex-lg-shrink-0 d-flex flex-column justify-content-center"
-        >
-          <div
-            class="payment-success-check-icon d-flex justify-content-between align-items-center"
-          >
-            <span class="material-icons"> check_circle </span>
-            <span class="material-icons"> check_circle </span>
-            <span class="material-icons"> check_circle </span>
+    <main>
+      <section class="cart row justify-content-lg-between">
+        <div class="cart-start col-12 col-lg-8 p-0">
+          <h3 class="cart-header text-center">您的購物車</h3>
+          <div class="cart-content row">
+            <!-- 購物車裡的商品卡 -->
+            <section
+              class="cart-product col-12 px-0 d-flex flex-column justify-content-center"
+            >
+              <div
+                class="cart-product-info d-inline-flex flex-column flex-wrap align-items-start"
+              >
+                <div class="cart-product-img"></div>
+                <div>
+                  <div class="cart-product-title">焦糖馬卡龍</div>
+                  <div class="cart-product-price">NT$ 450</div>
+                </div>
+                <div class="cart-product-qtu pagination mt-1">
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="minus"
+                      >-
+                    </a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="plus"
+                      >+
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="cart-product-sum text-end border-top border-bottom mt-2 py-2"
+              >
+                NT$ 900
+              </div>
+              <div class="cart-product-delete d-none d-lg-inline-block">
+                <span class="material-icons"> delete </span>
+              </div>
+            </section>
           </div>
-          <img
-            class="img-fluid"
-            src="./image/word-payment-success.svg"
-            alt="word-payment-success"
-          />
         </div>
-        <div class="payment-success-keep-btn d-flex justify-content-center">
-          <button class="">繼續逛逛</button>
+        <div class="cart-end col-12 col-lg-4">
+          <div class="cart-summary col-12">
+            <h3 class="text-center">訂單摘要</h3>
+            <div class="cart-summary-wrap mt-3">
+              <div class="cart-summary-item">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+              </div>
+              <div class="cart-summary-item">
+                <span>運費</span>
+                <span>NT$ 300</span>
+              </div>
+            </div>
+            <div class="cart-summary-item total mt-3">
+              <span>總計</span>
+              <span>NT$ 3,000</span>
+            </div>
+          </div>
+          <div class="cart-btn">
+            <button
+              class="cart-btn-checkout btn btn-primary rounded-0 w-100 fw-semibold"
+            >
+              結帳
+            </button>
+          </div>
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="w-100">
       <div class="footer-subscribe-edm">
         <form
