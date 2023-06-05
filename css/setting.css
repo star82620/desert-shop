@@ -18,6 +18,11 @@
   --bs-link-decoration: none;
   --bs-link-hover-color: var(--primary-middle);
   --bs-link-hover-color-rgb: var(--primary-middle-rgb);
+  /* --bs- */
+}
+
+.btn {
+  --bs-btn-font-size: 1.5rem;
 }
 
 .btn-primary {
@@ -145,4 +150,40 @@
   color: var(--primary-dark);
   background-color: var(--primary-light);
   border-color: var(--primary-light);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control::-moz-placeholder {
+  color: var(--primary-middle);
+  font-weight: 300;
+}
+.form-control::placeholder {
+  color: var(--primary-middle);
+  font-weight: 300;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.25rem;
 }

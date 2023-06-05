@@ -642,24 +642,161 @@
 }
 
 .checkout {
-  .checkout-ship {
-    @include w-375-871();
-    padding: 30px 30px 0;
+  .checkout-form-wrap {
+    margin: 0 auto;
+    padding: 30px;
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .checkout-ship-header,
-    .checkout-ship-form {
+  .checkout-form-header {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .checkout-form {
+    padding: 0;
+    margin: 0;
+
+    @include media-breakpoint-up-lg() {
+      padding: 12px;
+      margin: -12px;
+    }
+    padding: 0;
+  }
+
+  .checkout-form-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .checkout-form-address {
+    font-size: 20px;
+    font-weight: 600;
+    gap: 8px;
+  }
+
+  .payment-success-check-icon {
+    width: 50%;
+    border-bottom: 1px solid var(--primary-light);
+
+    span {
+      background: radial-gradient(var(--primary-dark) 50%, transparent 0%);
+    }
+  }
+
+  .w-half {
+    width: calc(50% - 4px);
+  }
+
+  .checkout-form-btn {
+    font-size: 24px;
+    height: 65px;
+  }
+
+  // 購物清單
+  #checkout-list {
+    gap: 20px 0;
+
+    .checkout-list-content {
+      padding: 16px 20px;
+      color: var(--primary-middle);
     }
 
-    .checkout-ship-form {
-    }
-    .payment-success-check-icon {
-      border-bottom: 1px solid var(--primary-light);
+    .checkout-list-summary,
+    .checkout-list-products {
+      border-color: var(--primary-light);
 
-      span {
-        background: radial-gradient(var(--primary-dark) 50%, transparent 0%);
+      h3 {
+        font-size: 24px;
+        color: var(--primary-middle);
+        background-color: var(--primary-light);
       }
+    }
+
+    .checkout-list-summary {
+      .checkout-summary-wrap {
+        gap: 8px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .checkout-summary-item {
+        font-weight: 300;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .checkout-summary-item.total {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 16px;
+      }
+    }
+
+    .checkout-list-products {
+      .checkout-product-info {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .checkout-product-img {
+          width: 120px;
+          height: 80px;
+          background: url("../image/photo-product-7.avif") no-repeat center
+            center / cover;
+          flex-shrink: 0;
+          margin-right: 20px;
+        }
+
+        .checkout-product-title {
+          margin-right: 8px;
+        }
+
+        .checkout-product-price {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  // 運送資訊
+  #checkout-ship {
+    padding: 0;
+
+    @include media-breakpoint-up-lg() {
+      padding: 0 12px;
+    }
+  }
+
+  // 付款資訊
+  #checkout-invoice {
+    .checkout-btn-invoice {
+      height: 56px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      font-weight: 600;
+      border-color: var(--primary-light);
+      color: var(--primary-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .checkout-btn-invoice.active {
+      color: var(--primary-dark);
+      background-color: var(--primary-light);
     }
   }
 }
