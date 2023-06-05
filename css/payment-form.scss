@@ -642,6 +642,9 @@
 }
 
 .checkout {
+  @include media-breakpoint-up-lg() {
+    padding-bottom: 60px;
+  }
   .checkout-form-wrap {
     margin: 0 auto;
     padding: 30px;
