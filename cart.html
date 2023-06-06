@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>Desert Shop</title>
   </head>
   <body class="d-flex flex-column justify-content-between align-items-center">
@@ -103,15 +107,15 @@
     <!-- 頁面內容 -->
     <main>
       <section class="cart row justify-content-lg-between">
-        <div class="cart-start col-12 col-lg-8 p-0">
+        <div class="cart-start col-12 col-lg-8">
           <h3 class="cart-header text-center">您的購物車</h3>
           <div class="cart-content row">
             <!-- 購物車裡的商品卡 -->
             <section
-              class="cart-product col-12 px-0 d-flex flex-column justify-content-center"
+              class="cart-product col-12 px-0 d-flex flex-column justify-content-center flex-lg-row justify-content-lg-between align-items-lg-center"
             >
               <div
-                class="cart-product-info d-inline-flex flex-column flex-wrap align-items-start"
+                class="cart-product-info d-inline-flex flex-column flex-wrap align-items-start flex-lg-row align-items-lg-center justify-content-lg-between w-100"
               >
                 <div class="cart-product-img"></div>
                 <div>
@@ -133,14 +137,95 @@
                     </a>
                   </div>
                 </div>
+                <div class="cart-product-sum text-end d-none d-lg-inline-block">
+                  NT$ 900
+                </div>
+                <div class="cart-product-delete d-none d-lg-inline-block">
+                  <span class="material-icons-outlined"> delete </span>
+                </div>
               </div>
               <div
-                class="cart-product-sum text-end border-top border-bottom mt-2 py-2"
+                class="cart-product-sum text-end mt-2 py-2 d-lg-none border-top"
               >
                 NT$ 900
               </div>
-              <div class="cart-product-delete d-none d-lg-inline-block">
-                <span class="material-icons"> delete </span>
+            </section>
+            <section
+              class="cart-product col-12 px-0 d-flex flex-column justify-content-center flex-lg-row justify-content-lg-between align-items-lg-center"
+            >
+              <div
+                class="cart-product-info d-inline-flex flex-column flex-wrap align-items-start flex-lg-row align-items-lg-center justify-content-lg-between w-100"
+              >
+                <div class="cart-product-img"></div>
+                <div>
+                  <div class="cart-product-title">焦糖馬卡龍</div>
+                  <div class="cart-product-price">NT$ 450</div>
+                </div>
+                <div class="cart-product-qtu pagination mt-1">
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="minus"
+                      >-
+                    </a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="plus"
+                      >+
+                    </a>
+                  </div>
+                </div>
+                <div class="cart-product-sum text-end d-none d-lg-inline-block">
+                  NT$ 900
+                </div>
+                <div class="cart-product-delete d-none d-lg-inline-block">
+                  <span class="material-icons-outlined"> delete </span>
+                </div>
+              </div>
+              <div
+                class="cart-product-sum text-end mt-2 py-2 d-lg-none border-top"
+              >
+                NT$ 900
+              </div>
+            </section>
+            <section
+              class="cart-product col-12 px-0 d-flex flex-column justify-content-center flex-lg-row justify-content-lg-between align-items-lg-center"
+            >
+              <div
+                class="cart-product-info d-inline-flex flex-column flex-wrap align-items-start flex-lg-row align-items-lg-center justify-content-lg-between w-100"
+              >
+                <div class="cart-product-img"></div>
+                <div>
+                  <div class="cart-product-title">焦糖馬卡龍</div>
+                  <div class="cart-product-price">NT$ 450</div>
+                </div>
+                <div class="cart-product-qtu pagination mt-1">
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="minus"
+                      >-
+                    </a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </div>
+                  <div class="page-item">
+                    <a class="page-link rounded-0" href="#" aria-label="plus"
+                      >+
+                    </a>
+                  </div>
+                </div>
+                <div class="cart-product-sum text-end d-none d-lg-inline-block">
+                  NT$ 900
+                </div>
+                <div class="cart-product-delete d-none d-lg-inline-block">
+                  <span class="material-icons-outlined"> delete </span>
+                </div>
+              </div>
+              <div
+                class="cart-product-sum text-end mt-2 py-2 d-lg-none border-top"
+              >
+                NT$ 900
               </div>
             </section>
           </div>
@@ -164,13 +249,12 @@
             </div>
           </div>
           <div class="cart-btn">
-            <a href="./checkout.html">
-              <button
-              class="cart-btn-checkout btn btn-primary rounded-0 w-100 fw-semibold"
-              >
-            </a>
+            <a
+              class="cart-btn-checkout btn btn-primary rounded-0 w-100 fw-semibold d-flex justify-content-center align-items-center"
+              href="./checkout.html"
+            >
               結帳
-            </button>
+            </a>
           </div>
         </div>
       </section>

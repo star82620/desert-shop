@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./js/bootstrap.js"></script>
     <script defer src="./js/popper.min.js"></script>
+    <script defer src="./js/all.js"></script>
     <link rel="stylesheet" href="./css/all.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -101,7 +102,7 @@
       </div>
     </header>
     <!-- 頁面內容 -->
-    <main class="w-100 container">
+    <main class="w-100">
       <section class="checkout row justify-content-center">
         <section class="checkout-form col-lg-6 row">
           <!-- 運送資訊 -->
@@ -120,7 +121,7 @@
                 </div>
               </div>
               <div class="checkout-form g-3 row">
-                <label for="" class="checkout-form-lastname col-6">
+                <label class="checkout-form-lastname col-6 pe-1">
                   <div class="checkout-form-title">姓氏</div>
                   <input
                     class="form-control rounded-0"
@@ -128,7 +129,7 @@
                     placeholder="王"
                   />
                 </label>
-                <label for="" class="checkout-form-firstname col-6">
+                <label class="checkout-form-firstname col-6 ps-1">
                   <div class="checkout-form-title">名字</div>
                   <input
                     class="form-control rounded-0"
@@ -136,7 +137,7 @@
                     placeholder="小明"
                   />
                 </label>
-                <label for="" class="checkout-form-phone">
+                <label class="checkout-form-phone">
                   <div class="checkout-form-title">電話</div>
                   <input
                     class="form-control rounded-0"
@@ -146,21 +147,21 @@
                 </label>
                 <div class="checkout-form-address col-12 d-flex flex-wrap py-0">
                   <div class="w-100">地址</div>
-                  <label class="checkout-form-address-city w-half" for="">
+                  <label class="checkout-form-address-city w-half">
                     <input
                       class="form-control rounded-0"
                       type="text"
                       placeholder="高雄市"
                     />
                   </label>
-                  <label class="checkout-form-address-district w-half" for="">
+                  <label class="checkout-form-address-district w-half">
                     <input
                       class="form-control rounded-0"
                       type="text"
                       placeholder="新興區"
                     />
                   </label>
-                  <label class="w-100" for="">
+                  <label class="w-100">
                     <input
                       class="form-control rounded-0 col-12"
                       type="text"
@@ -193,7 +194,7 @@
                 </div>
               </div>
               <div class="checkout-payment-form g-3 row">
-                <label for="" class="checkout-credit-num">
+                <label class="checkout-credit-num">
                   <div class="checkout-form-title">信用卡卡號</div>
                   <input
                     class="form-control rounded-0"
@@ -203,14 +204,14 @@
                 </label>
                 <div class="checkout-credit-name d-flex flex-wrap">
                   <div class="checkout-form-title w-100">持卡人姓名</div>
-                  <label for="" class="checkout-credit-lastname w-half me-2">
+                  <label class="checkout-credit-lastname w-half me-2">
                     <input
                       class="form-control rounded-0"
                       type="text"
                       placeholder="王"
                     />
                   </label>
-                  <label for="" class="checkout-credit-firstname w-half">
+                  <label class="checkout-credit-firstname w-half">
                     <input
                       class="form-control rounded-0"
                       type="text"
@@ -220,14 +221,14 @@
                 </div>
                 <div class="checkout-form-credit-date d-flex flex-wrap">
                   <div class="checkout-form-title w-100">有效期限</div>
-                  <label for="" class="w-half me-2">
+                  <label class="w-half me-2">
                     <input
                       class="form-control rounded-0"
                       type="text"
                       placeholder="月"
                     />
                   </label>
-                  <label for="" class="w-half">
+                  <label class="w-half">
                     <input
                       class="form-control rounded-0"
                       type="text"
@@ -235,7 +236,7 @@
                     />
                   </label>
                 </div>
-                <label for="" class="checkout-credit-password w-50">
+                <label class="checkout-credit-password w-50">
                   <div class="checkout-form-title">背面末三碼</div>
                   <input
                     class="form-control rounded-0"
@@ -267,7 +268,7 @@
                   <span class="material-icons"> radio_button_checked </span>
                 </div>
               </div>
-              <div class="w-100 d-flex">
+              <div class="toggle-invoice w-100 d-flex">
                 <div
                   class="checkout-btn-invoice border border-end-0 w-50 active"
                   id="checkout-btn-invoice-icloud"
@@ -281,43 +282,16 @@
                   郵寄發票
                 </div>
               </div>
-              <div class="checkout-invoice-paper g-3 row">
-                <div class="checkout-form-address col-12 d-flex flex-wrap py-0">
-                  <div class="w-100 d-flex justify-content-between">
-                    地址
-                    <label for="" class="">
-                      <input
-                        class="d-inline-block"
-                        type="checkbox"
-                        name=""
-                        id=""
-                      />
-                      <span class="fs-6 ms-2">同運送地址</span>
-                    </label>
-                  </div>
-                  <label class="checkout-form-address-city w-half" for="">
-                    <input
-                      class="form-control rounded-0"
-                      type="text"
-                      placeholder="高雄市"
-                    />
-                  </label>
-                  <label class="checkout-form-address-district w-half" for="">
-                    <input
-                      class="form-control rounded-0"
-                      type="text"
-                      placeholder="新興區"
-                    />
-                  </label>
-                  <label class="w-100" for="">
-                    <input
-                      class="form-control rounded-0 col-12"
-                      type="text"
-                      placeholder="幸福路 520 號"
-                    />
-                  </label>
-                </div>
-                <label for="" class="checkout-credit-num">
+              <div class="checkout-invoice-icloud g-3 row">
+                <label>
+                  <div class="checkout-form-title">電子郵件信箱</div>
+                  <input
+                    class="form-control rounded-0"
+                    type="text"
+                    placeholder="example@email.com"
+                  />
+                </label>
+                <label class="checkout-credit-num">
                   <div class="checkout-form-title">統一編號（選填）</div>
                   <input
                     class="form-control rounded-0"
@@ -326,16 +300,38 @@
                   />
                 </label>
               </div>
-              <div class="checkout-invoice-cloud g-3 row">
-                <label for="">
-                  <div class="checkout-form-title">電子郵件信箱</div>
-                  <input
-                    class="form-control rounded-0"
-                    type="text"
-                    placeholder="example@email.com"
-                  />
-                </label>
-                <label for="" class="checkout-credit-num">
+              <div class="checkout-invoice-paper g-3 row">
+                <div class="checkout-form-address col-12 d-flex flex-wrap py-0">
+                  <div class="w-100 d-flex justify-content-between">
+                    <div class="checkout-form-title">地址</div>
+                    <label class="form-checkbox">
+                      <input class="" type="checkbox" name="" id="" />
+                      <span class="fs-6 ms-2">同運送地址</span>
+                    </label>
+                  </div>
+                  <label class="checkout-form-address-city w-half">
+                    <input
+                      class="form-control rounded-0"
+                      type="text"
+                      placeholder="高雄市"
+                    />
+                  </label>
+                  <label class="checkout-form-address-district w-half">
+                    <input
+                      class="form-control rounded-0"
+                      type="text"
+                      placeholder="新興區"
+                    />
+                  </label>
+                  <label class="w-100">
+                    <input
+                      class="form-control rounded-0 col-12"
+                      type="text"
+                      placeholder="幸福路 520 號"
+                    />
+                  </label>
+                </div>
+                <label class="checkout-credit-num">
                   <div class="checkout-form-title">統一編號（選填）</div>
                   <input
                     class="form-control rounded-0"
@@ -348,6 +344,7 @@
             <button
               id="checkout-form-btn-invoice"
               class="checkout-form-btn btn btn-primary w-100 rounded-0 d-flex justify-content-center align-items-center fw-semibold"
+              onclick="window.location.href='./payment-success.html';"
             >
               確認結帳
             </button>

@@ -3,7 +3,7 @@
 $primary-dark: #3f5d45;
 $primary-middle: #8da291;
 $primary-light: #eaf0ed;
-$hight-ligh: #ffe180;
+$hight-light: #ffe180;
 
 // $grid-breakpoints: (
 //   xs: 0,
@@ -37,7 +37,8 @@ $hight-ligh: #ffe180;
   margin: 0 auto;
 
   @include media-breakpoint-up-lg {
-    max-width: 780px;
+    max-width: 800px;
+    width: 800px;
   }
 }
 
@@ -66,9 +67,6 @@ $hight-ligh: #ffe180;
 a {
   text-decoration: none;
   color: var(--primary-dark);
-
-  &:hover {
-  }
 }
 
 button {
@@ -78,8 +76,10 @@ button {
 
 // header
 header {
-  box-shadow: 0 0px 4px 1px var(--bs-gray-100);
   height: 84px;
+  background: #fff;
+  // box-shadow: 0 0 4px #ccc;
+  border-bottom: 1px solid var(--primary-light);
 
   @include media-breakpoint-up-lg {
     height: 100px;
@@ -117,6 +117,29 @@ header {
     .header-nav-list {
       gap: 60px;
       font-weight: 600;
+    }
+  }
+
+  .header-nav-list-mobile {
+    position: absolute;
+    top: 84px;
+    height: auto;
+    // padding: 4px;
+    background-color: var(--primary-middle);
+
+    li {
+      background-color: #fff;
+      border-bottom: 2px solid var(--primary-light);
+      padding: 16px 0;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    li:active {
+      background-color: var(--primary-light);
     }
   }
 }

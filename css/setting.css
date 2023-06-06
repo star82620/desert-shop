@@ -18,7 +18,6 @@
   --bs-link-decoration: none;
   --bs-link-hover-color: var(--primary-middle);
   --bs-link-hover-color-rgb: var(--primary-middle-rgb);
-  /* --bs- */
 }
 
 .btn {
@@ -108,24 +107,14 @@
   --bs-pagination-font-size: 1rem;
   --bs-pagination-color: var(--primary-dark);
   --bs-pagination-bg: var(--bs-body-bg);
-  --bs-pagination-border-width: var(--bs-border-width);
-  --bs-pagination-border-color: var(--bs-border-color);
-  --bs-pagination-border-radius: var(--bs-border-radius);
   --bs-pagination-hover-color: var(--primary-light);
   --bs-pagination-hover-bg: var(--primary-dark);
-  --bs-pagination-hover-border-color: var(--bs-border-color);
-  --bs-pagination-focus-color: var(--bs-link-hover-color);
-  --bs-pagination-focus-bg: var(--bs-secondary-bg);
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 2px
+    rgba(var(--primary-dark-rgb), 0.25);
+  --bs-pagination-focus-bg: var(--primary-dark);
+  --bs-pagination-focus-color: var(--primary-light);
   --bs-pagination-active-color: #fff;
   --bs-pagination-active-bg: var(--primary-dark);
-  --bs-pagination-active-border-color: var(--bs-border-color);
-  --bs-pagination-disabled-color: var(--bs-secondary-color);
-  --bs-pagination-disabled-bg: var(--bs-secondary-bg);
-  --bs-pagination-disabled-border-color: var(--bs-border-color);
-  display: flex;
-  padding-left: 0;
-  list-style: none;
 }
 
 .list-group-item-action {
@@ -153,21 +142,9 @@
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
   color: var(--primary-dark);
   background-color: var(--primary-light);
-  background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control::-moz-placeholder {
   color: var(--primary-middle);
@@ -178,6 +155,11 @@
   font-weight: 300;
 }
 
+.form-control:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(var(--primary-light-rgb), 0.25);
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -185,5 +167,9 @@
 .container-lg,
 .container-md,
 .container-sm {
+  --bs-gutter-x: 1.25rem;
+}
+
+.row {
   --bs-gutter-x: 1.25rem;
 }
