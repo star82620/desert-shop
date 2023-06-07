@@ -47,9 +47,10 @@ header .header-wrap .header-logo img.header-logo-logotype {
     height: 27px;
   }
 }
-header .header-wrap .header-logo h1 {
+header .header-wrap .hide {
   width: 0;
   height: 0;
+  font-size: 0;
 }
 header .header-wrap .header-nav-list {
   gap: 60px;

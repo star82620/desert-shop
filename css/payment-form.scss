@@ -767,6 +767,30 @@
     width: 960px;
     padding: 30px 0 60px;
   }
+
+  .form-block-container-outside {
+    @include media-breakpoint-up-lg() {
+      overflow: hidden;
+    }
+  }
+  .form-block-container-inside {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: 0.5s;
+  }
+
+  .form-toggle-ship {
+    margin-left: 0;
+  }
+
+  .form-toggle-payment {
+    margin-left: -448px;
+  }
+
+  .form-toggle-invoice {
+    margin-left: -900px;
+  }
+
   .checkout-form-wrap {
     margin: 0 auto;
     padding: 30px;
@@ -789,12 +813,18 @@
   .checkout-form {
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 
     @include media-breakpoint-up-lg() {
       padding: 12px;
       margin: -12px;
     }
     padding: 0;
+  }
+
+  .checkout-form-block {
+    flex-shrink: 0;
+    margin-right: 10px;
   }
 
   .checkout-form-title {
@@ -945,6 +975,22 @@
     .checkout-btn-invoice.active {
       color: var(--primary-dark);
       background-color: var(--primary-light);
+    }
+
+    .checkout-invoice-icloud {
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .checkout-invoice-paper {
+      display: none;
+
+      &.active {
+        display: flex;
+      }
     }
   }
 }

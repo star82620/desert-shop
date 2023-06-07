@@ -48,9 +48,10 @@ header .header-wrap .header-logo img.header-logo-logotype {
     height: 27px;
   }
 }
-header .header-wrap .header-logo h1 {
+header .header-wrap .hide {
   width: 0;
   height: 0;
+  font-size: 0;
 }
 header .header-wrap .header-nav-list {
   gap: 60px;
@@ -886,6 +887,25 @@ footer .footer-info .footer-info-slogan img {
     padding: 30px 0 60px;
   }
 }
+@media (min-width: 992px) {
+  .checkout .form-block-container-outside {
+    overflow: hidden;
+  }
+}
+.checkout .form-block-container-inside {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 0.5s;
+}
+.checkout .form-toggle-ship {
+  margin-left: 0;
+}
+.checkout .form-toggle-payment {
+  margin-left: -448px;
+}
+.checkout .form-toggle-invoice {
+  margin-left: -900px;
+}
 .checkout .checkout-form-wrap {
   margin: 0 auto;
   padding: 30px;
@@ -906,6 +926,7 @@ footer .footer-info .footer-info-slogan img {
 .checkout .checkout-form {
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
   padding: 0;
 }
 @media (min-width: 992px) {
@@ -913,6 +934,10 @@ footer .footer-info .footer-info-slogan img {
     padding: 12px;
     margin: -12px;
   }
+}
+.checkout .checkout-form-block {
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 .checkout .checkout-form-title {
   font-size: 20px;
@@ -1037,4 +1062,16 @@ footer .footer-info .footer-info-slogan img {
 .checkout #checkout-invoice .checkout-btn-invoice.active {
   color: var(--primary-dark);
   background-color: var(--primary-light);
+}
+.checkout #checkout-invoice .checkout-invoice-icloud {
+  display: none;
+}
+.checkout #checkout-invoice .checkout-invoice-icloud.active {
+  display: flex;
+}
+.checkout #checkout-invoice .checkout-invoice-paper {
+  display: none;
+}
+.checkout #checkout-invoice .checkout-invoice-paper.active {
+  display: flex;
 }/*# sourceMappingURL=payment-form.css.map */
